@@ -11,6 +11,7 @@
 - **Indentation : 2 espaces uniquement**
 - **Jamais utiliser de tabulations**
 - **Ligne vide entre les sections de code** pour séparer les blocs logiques
+- **Unifier l'espacement** entre les lignes de même section (soit toutes avec ligne vide, soit aucune)
 - **Pas d'espaces à la fin des lignes**
 
 ### 1.3 Organisation des Imports
@@ -34,7 +35,6 @@
 
 ### 2.1 Traçabilité
 - **Définir les tables dans TransDB** lors de la création pour la traçabilité
-- **Unifier l'espacement** entre les lignes de même section (soit toutes avec ligne vide, soit aucune)
 
 ### 2.2 Formatage DBSchema et TransDB
 - **Symbole égal à la position 41** dans les fichiers DBSchema et TransDB
