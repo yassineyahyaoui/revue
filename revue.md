@@ -83,13 +83,11 @@
 - **Affichage** : vérifier que les données s'affichent correctement
 - **Insertion** : tester l'ajout de nouveaux enregistrements
 - **Suppression** : tester la suppression d'enregistrements
-- **Modification** : tester la mise à jour d'enregistrements
+- **Modification** : tester la mise à jour d'enregistrements (avec différent utilisateur)
 
 ### 5.2 Tests Fonctionnels
 - **Rapports** : vérifier que les rapports génèrent les bonnes données
 - **Filtres** : tester les critères de recherche
-- **Jointures** : vérifier que les données liées s'affichent correctement
-- **Gestion d'erreurs** : tester les cas d'erreur (valeurs nulles, etc.)
 
 ## Section 6 : Checklist de Validation
 
