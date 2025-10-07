@@ -16,11 +16,11 @@
 
 ### 1.3 Organisation des Imports
 - **Ordre des imports** (du plus généralisé au plus particulier) :
-  1. `java.*`
-  2. `org.jetbrains.exposed.*`
-  3. `org.kopi.galite.*`
-  4. `org.kopi.zembra.*`
-  5. `com.progmag.pdv.*`
+    1. `java.*`
+    2. `org.jetbrains.exposed.*`
+    3. `org.kopi.galite.*`
+    4. `org.kopi.zembra.*`
+    5. `com.progmag.pdv.*`
 - **Ligne vide entre les imports** de packages différents
 
 ### 1.4 En-têtes et Documentation
@@ -57,10 +57,10 @@
 - **Vérifier les jointures** (INNER JOIN, LEFT JOIN, RIGHT JOIN)
 - **Vérifier les domaines des fields** (STRING, INT, domaines personnalisés)
 - **Ordre des champs de création/modification** :
-  1. `creePar`
-  2. `creeLe`
-  3. `modifiePar`
-  4. `modifieLe`
+    1. `creePar`
+    2. `creeLe`
+    3. `modifiePar`
+    4. `modifieLe`
 
 ### 3.3 Utilisation de Galite
 - **Utiliser Galite dans tous les cas possibles** (pas de redéfinition non nécessaire)
@@ -91,45 +91,52 @@
 
 ## Section 6 : Checklist de Validation
 
-### 6.1 Avant Validation
-- [ ] Tous les fichiers compilent sans erreur
-- [ ] Aucun warning critique
-- [ ] En-têtes de copyright présents
-- [ ] Propset Id corrects
-
-### 6.2 Validation du Code
-- [ ] Noms en français avec accents
-- [ ] Indentation 2 espaces (pas de tabs)
-- [ ] Imports organisés et séparés
-- [ ] Commentaires en français
+### 6.1 Standards de Code Généraux
+- [ ] Noms des variables, fonctions, et classes en français
+- [ ] Noms des variables, fonctions, et inner classes en français avec les accents
+- [ ] Indentation 2 espaces uniquement (jamais de tabulations)
+- [ ] Ligne vide entre les sections de code
+- [ ] Unifier l'espacement entre les lignes de même section
+- [ ] Pas d'espaces à la fin des lignes
+- [ ] Ordre des imports respecté (java > exposed > galite > zembra > pdv)
+- [ ] Ligne vide entre les imports de packages différents
+- [ ] En-tête de copyright complet
+- [ ] Propset Id du fichier correct
+- [ ] Commentaires clairs et en français
 - [ ] Formatage des arguments respecté
 
-### 6.3 Validation Base de Données
-- [ ] Tables définies dans TransDB
-- [ ] Noms en minuscules
-- [ ] Références correctes
-- [ ] Ordre alphabétique des tables
-- [ ] Champs de traçabilité dans le bon ordre
+### 6.2 TransDB et DBSchema
+- [ ] Tables définies dans TransDB pour la traçabilité
+- [ ] Symbole égal à la position 41 dans les fichiers DBSchema et TransDB
+- [ ] Noms des tables et colonnes en minuscules
+- [ ] Ordre des tables dans DBSchema alphabétique
+- [ ] Colonnes des tables vérifiées (nombre de caractères dans varchar)
+- [ ] Références entre tables vérifiées
 
-### 6.4 Validation Formulaires/Rapports
-- [ ] Commandes présentes
-- [ ] Positions des champs correctes
-- [ ] Jointures appropriées
-- [ ] Domaines Galite utilisés
-- [ ] Gestion des valeurs nulles
+### 6.3 Formulaires et Rapports
+- [ ] Commandes vérifiées (breakCommand, report, etc.)
+- [ ] Index des tables vérifiés
+- [ ] Nombre de lignes des blocs vérifié
+- [ ] Positions des fields vérifiées (at(x, y))
+- [ ] Jointures vérifiées (INNER JOIN, LEFT JOIN, RIGHT JOIN)
+- [ ] Domaines des fields vérifiés (STRING, INT, domaines personnalisés)
+- [ ] Ordre des champs de création/modification respecté (creePar, creeLe, modifiePar, modifieLe)
+- [ ] Galite utilisé dans tous les cas possibles
+- [ ] Gestion des valeurs nulles avec `?: ""` pour les champs STRING
 
-### 6.5 Validation Global.kt
-- [ ] Widths appropriées
-- [ ] Noms en pluriels
-- [ ] Type de domaine correct (ListDomain/CodeDomain)
-- [ ] Convert si nécessaire
+### 6.4 Global.kt
+- [ ] Largeurs des domaines vérifiées
+- [ ] Noms en pluriels pour les domaines
+- [ ] Type de domaine approprié (ListDomain ou CodeDomain)
+- [ ] Convert (UPPER/LOWER) si nécessaire
 
-### 6.6 Tests Fonctionnels
-- [ ] Affichage fonctionne
-- [ ] Insertion fonctionne
-- [ ] Suppression fonctionne
-- [ ] Modification fonctionne
-- [ ] Rapports génèrent les bonnes données
+### 6.5 Tests et Scénarios
+- [ ] Affichage : données s'affichent correctement
+- [ ] Insertion : ajout de nouveaux enregistrements
+- [ ] Suppression : suppression d'enregistrements
+- [ ] Modification : mise à jour d'enregistrements (avec différent utilisateur)
+- [ ] Rapports : génèrent les bonnes données
+- [ ] Filtres : critères de recherche fonctionnent
 
 ---
 
