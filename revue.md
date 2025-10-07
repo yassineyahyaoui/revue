@@ -28,7 +28,7 @@
 - [ ] Nombre de lignes des blocs vérifié
 - [ ] Positions des fields vérifiées (at(x, y))
 - [ ] Jointures vérifiées (INNER JOIN, LEFT JOIN, RIGHT JOIN)
-- [ [ ] Domaines des fields vérifiés (STRING, INT, domaines personnalisés)
+- [ ] Domaines des fields vérifiés (STRING, INT, domaines personnalisés)
 - [ ] Ordre des champs de création/modification respecté (creePar, creeLe, modifiePar, modifieLe)
 - [ ] Galite utilisé dans tous les cas possibles
 - [ ] Gestion des valeurs nulles avec `?: ""` pour les champs STRING
