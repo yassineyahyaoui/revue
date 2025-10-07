@@ -44,19 +44,6 @@
 ### 2.3 Validation des Tables
 - **Vérifier les colonnes des tables** (exemple : nombre de caractères dans varchar)
 - **Vérifier les références** entre tables
-- **Ordre des champs de création/modification** :
-  1. `creePar`
-  2. `creeLe`
-  3. `modifiePar`
-  4. `modifieLe`
-
-```kotlin
-// ✅ Correct
-val creePar = integer("creepar").references(Users.id)
-val creeLe = datetime("creele")
-val modifiePar = integer("modifiepar").references(Users.id)
-val modifieLe = datetime("modifiele")
-```
 
 ## Section 3 : Formulaires et Rapports
 
@@ -69,20 +56,23 @@ val modifieLe = datetime("modifiele")
 - **Vérifier les positions des fields** (at(x, y))
 - **Vérifier les jointures** (INNER JOIN, LEFT JOIN, RIGHT JOIN)
 - **Vérifier les domaines des fields** (STRING, INT, domaines personnalisés)
+- **Ordre des champs de création/modification** :
+  1. `creePar`
+  2. `creeLe`
+  3. `modifiePar`
+  4. `modifieLe`
 
 ### 3.3 Utilisation de Galite
 - **Utiliser Galite dans tous les cas possibles** (pas de redéfinition non nécessaire)
 - **Privilégier les domaines Galite** aux types primitifs quand approprié
 
 ### 3.4 Structure des Rapports
-- **Ordre des champs** : ID en dernier
 - **Gestion des valeurs nulles** avec `?: ""` pour les champs STRING
-- **Jointures appropriées** selon les besoins métier
 
 ## Section 4 : Global.kt
 
 ### 4.1 Configuration des Domaines
-- **Vérifier les widths** des domaines
+- **Vérifier les largeurs** des domaines
 - **Noms en pluriels** pour les domaines
 - **Vérifier si ListDomain ou CodeDomain** est approprié
 - **Vérifier si Convert (UPPER/LOWER)** est nécessaire
