@@ -77,23 +77,6 @@
 - **Vérifier si ListDomain ou CodeDomain** est approprié
 - **Vérifier si Convert (UPPER/LOWER)** est nécessaire
 
-```kotlin
-// ✅ Exemple correct
-object NomsHote: ListDomain<String>(30) {
-  override val table = query(
-    NomsHote
-      .join(DomainesInternet, JoinType.INNER, NomsHote.domaineInternet, DomainesInternet.id)
-      .slice(NomsHote.nomQualifie, DomainesInternet.identifiant)
-      .select { NomsHote.estCanonique eq true }
-  )
-  init {
-    "Nom Qualifié" keyOf NomsHote.nomQualifie hasWidth 30
-    "Domaine" keyOf DomainesInternet.identifiant hasWidth 20
-    convert = Convert.LOWER
-  }
-}
-```
-
 ## Section 5 : Tests et Scénarios
 
 ### 5.1 Scénarios de Validation
