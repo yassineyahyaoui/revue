@@ -28,8 +28,7 @@
 - **Commentaires clairs et en français**
 
 ### 1.5 Formatage des Arguments
-- **Fonctions avec plusieurs arguments** : tous les arguments sauf le premier sur une ligne séparée
-- **Alignement** : les arguments commencent à la position du premier argument
+- Si tous les arguments sauf le premier sur une ligne séparée, les arguments commencent à la position du premier argument
 
 ## Section 2 : Base de Données (TransDB et DBSchema)
 
