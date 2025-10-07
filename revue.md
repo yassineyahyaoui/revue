@@ -40,10 +40,10 @@
 - [ ] Convert (UPPER/LOWER) si nécessaire
 
 ## Section 5 : Tests et Scénarios
-- [ ] Affichage : données s'affichent correctement
-- [ ] Insertion : ajout de nouveaux enregistrements
-- [ ] Suppression : suppression d'enregistrements
-- [ ] Modification : mise à jour d'enregistrements (avec différent utilisateur)
+- [ ] Affichage
+- [ ] Insertion
+- [ ] Suppression
+- [ ] Modification (avec différent utilisateur)
 - [ ] Rapports : génèrent les bonnes données
 - [ ] Filtres : critères de recherche fonctionnent
 
