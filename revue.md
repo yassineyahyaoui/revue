@@ -24,7 +24,7 @@
 - **Ligne vide entre les imports** de packages différents
 
 ### 1.4 En-têtes et Documentation
-- **Ajouter l'en-tête de copyright** complet
+- **Ajouter l'en-tête de copyright**
 - **Vérifier le propset Id du fichier** (format : `$Id: NomFichier.kt XXX YYYY-MM-DD HH:MM:SSZ utilisateur $`)
 - **Commentaires clairs et en français**
 
@@ -48,13 +48,13 @@
 ## Section 3 : Formulaires et Rapports
 
 ### 3.1 Commandes et Navigation
-- **Vérifier les commandes** (breakCommand, report, etc.)
+- **Vérifier les commandes**
 - **Vérifier les index** des tables
 - **Vérifier le nombre de lignes des blocs**
 
 ### 3.2 Positionnement des Champs
 - **Vérifier les positions des fields** (at(x, y))
-- **Vérifier les jointures** (INNER JOIN, LEFT JOIN, RIGHT JOIN)
+- **Vérifier les jointures**
 - **Vérifier les domaines des fields** (STRING, INT, domaines personnalisés)
 - **Ordre des champs de création/modification** :
     1. `creePar`
@@ -94,13 +94,14 @@
 ### 6.1 Standards de Code Généraux
 - [ ] Noms des variables, fonctions, et classes en français
 - [ ] Noms des variables, fonctions, et inner classes en français avec les accents
-- [ ] Indentation 2 espaces uniquement (jamais de tabulations)
-- [ ] Ligne vide entre les sections de code
+- [ ] Indentation 2 espaces uniquement
+- [ ] Jamais de tabulations
+- [ ] Ligne vide entre les différentes sections de code
 - [ ] Unifier l'espacement entre les lignes de même section
 - [ ] Pas d'espaces à la fin des lignes
 - [ ] Ordre des imports respecté (java > exposed > galite > zembra > pdv)
 - [ ] Ligne vide entre les imports de packages différents
-- [ ] En-tête de copyright complet
+- [ ] En-tête de copyright
 - [ ] Propset Id du fichier correct
 - [ ] Commentaires clairs et en français
 - [ ] Formatage des arguments respecté
@@ -110,16 +111,16 @@
 - [ ] Symbole égal à la position 41 dans les fichiers DBSchema et TransDB
 - [ ] Noms des tables et colonnes en minuscules
 - [ ] Ordre des tables dans DBSchema alphabétique
-- [ ] Colonnes des tables vérifiées (nombre de caractères dans varchar)
-- [ ] Références entre tables vérifiées
+- [ ] Colonnes des tables
+- [ ] Références entre tables
 
 ### 6.3 Formulaires et Rapports
-- [ ] Commandes vérifiées (breakCommand, report, etc.)
+- [ ] Commandes vérifiées
 - [ ] Index des tables vérifiés
 - [ ] Nombre de lignes des blocs vérifié
 - [ ] Positions des fields vérifiées (at(x, y))
-- [ ] Jointures vérifiées (INNER JOIN, LEFT JOIN, RIGHT JOIN)
-- [ ] Domaines des fields vérifiés (STRING, INT, domaines personnalisés)
+- [ ] Jointures
+- [ ] Domaines des fields
 - [ ] Ordre des champs de création/modification respecté (creePar, creeLe, modifiePar, modifieLe)
 - [ ] Galite utilisé dans tous les cas possibles
 - [ ] Gestion des valeurs nulles avec `?: ""` pour les champs STRING
