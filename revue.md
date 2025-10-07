@@ -31,7 +31,7 @@
 ### 1.5 Formatage des Arguments
 - Si tous les arguments sauf le premier sur une ligne séparée, les arguments commencent à la position du premier argument
 
-## Section 2 : Base de Données (TransDB et DBSchema)
+## Section 2 : TransDB et DBSchema
 
 ### 2.1 Traçabilité
 - **Définir les tables dans TransDB** lors de la création pour la traçabilité
