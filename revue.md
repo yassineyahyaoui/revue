@@ -3,8 +3,8 @@
 ## Section 1 : Standards de Code Généraux
 
 ### 1.1 Nommage
-- **Noms des variables, fonctions, et classes en français** avec les accents
-- **Noms des inner classes en français** avec les accents
+- **Noms des variables, fonctions, et classes en français**
+- **Noms des variables, fonctions, et inner classes en français** avec les accents
 - Utiliser la nomenclature française cohérente dans tout le projet
 
 ### 1.2 Formatage et Indentation
