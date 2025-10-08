@@ -47,13 +47,3 @@
 - [ ] Rapports : génèrent les bonnes données
 - [ ] Filtres : critères de recherche fonctionnent
 
----
-
-**Statut** : 
-- [ ] OK
-- [ ] KO
-
-**Commentaires** :
-_________________________________
-_________________________________
-_________________________________
